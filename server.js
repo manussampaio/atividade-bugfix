@@ -23,7 +23,7 @@ const server = http.createServer((req, res) => {
     if (req.url === '/api/hello' && req.method === 'GET') {
         res.writeHead(200, { 'Content-Type': 'application/json' });
         res.write(JSON.stringify({ mensagem: 'Olá do servidor!' }));
-
+        res.end();
         return;
     }
 
