@@ -14,7 +14,7 @@ const server = http.createServer((req, res) => {
         return;
     }
   
-    if (req.url === '/sobre' && req.method === 'GET') {
+    if (req.url === '/about' && req.method === 'GET') {
         res.writeHead(200, { 'Content-Type': 'text/plain; charset=utf-8' });
         res.end('Página sobre o projeto.');
         return;
